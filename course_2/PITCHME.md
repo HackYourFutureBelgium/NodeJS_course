@@ -24,9 +24,10 @@ The database!
 Let's have a look at the database.
 Go to [www.phpmyadmin.co](http://www.phpmyadmin.co)
 ```
-server: sql7.freemysqlhosting.net
-Username: sql7252233
-Password: DtwyYW71zK
+Server: sql7.freemysqlhosting.net
+Username: sql7253327
+Password: siuhUBG93p
+Database: sql7253327
 ```
 ---
 Clone the [NodeJS course](https://github.com/HackYourFutureBelgium/NodeJS_course)
