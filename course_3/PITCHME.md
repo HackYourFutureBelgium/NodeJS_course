@@ -1,8 +1,7 @@
 0. Clean code
 1. Deployment
 2. How to save a password, login and tokens
-3. Generating PDF's
-4. Other small stuff
+3. Other small stuff
 ---
 How to deploy a website?
 ---
@@ -11,7 +10,6 @@ How to deploy a website?
 3. Deploy your master app to Heroku
 4. Deploy your dev app to Heroku
 5. (Add process env variables)
-6. Link the app deployment to a domain
 ---
 ## Initiate branch pipeline
 1. replace port inside index.js with `const PORT = process.env.PORT || 8000;`
@@ -25,20 +23,19 @@ How to deploy a website?
 2. Protect against well known vulnerabilities with [Helmet middleware](https://www.npmjs.com/package/helmet)
 3. Set the environment to production by adding `NODE_ENV=production` to the start command inside package.json
 4. Replace at the same place `nodemon` with `node`
-
 ---
-## Deploy your *master* branch to Heroku
+## Deploy your **master** branch to Heroku
 1. Initiate your project as a GitHub repository
 2. [Sign up for Heroku](https://signup.heroku.com/?c=70130000001x9jFAAQ)
 3. Setup a new app
 4. Deploy with your Github repository with master branch
 5. Enable automatic deploys
 ---
-## Deploy your *dev* branch to Heroku
-1. *Don't* do any production setup
+## Deploy your **dev** branch to Heroku
+1. **Don't** do any production setup
 2. Deploy with your Github repository with dev branch
 3. Enable automatic deploys
-4. Make changes on the dev branch, test them on the live domain
+4. Make changes on the dev branch, test them on the domain
 5. Test okay? Merge with master
 ---
 ## Making use of process env variables
@@ -47,9 +44,10 @@ How to deploy a website?
 3. Add `databasePassword` as key and `siuhUBG93p` as value
 4. Add `databaseUser` as key and `sql7253327` as value
 5. Use `process.env.<varName>` in the Database config
+---
+How to save a password, login and tokens?
+---
 
-
-//https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/deployment
 
 
 
