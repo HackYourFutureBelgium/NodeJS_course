@@ -1,7 +1,15 @@
 0. Clean code
 1. Deployment
-2. How to save a password, login and tokens
+2. How to save a password and login?
 3. Other small stuff
+---
+## Clean code tips
+- Indentation!
+- Be consistent in naming things and use conventions
+- Use small, one purpose functions (max 20/25 lines)
+- Name functions to what they do
+- Keep your classes small (max 300/400 lines)
+- Write code in a way that it's explains itself
 ---
 How to deploy a website?
 ---
@@ -33,7 +41,7 @@ How to deploy a website?
 ---
 ## Deploy your **dev** branch to Heroku
 1. **Don't** do any production setup
-2. Deploy with your Github repository with dev branch
+2. Deploy to new Heroku app with your Github repository using the dev branch
 3. Enable automatic deploys
 4. Make changes on the dev branch, test them on the domain
 5. Test okay? Merge with master
@@ -45,21 +53,37 @@ How to deploy a website?
 4. Add `databaseUser` as key and `sql7253327` as value
 5. Use `process.env.<varName>` in the Database config
 ---
-How to save a password, login and tokens?
+How to save a password and login?
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-What we didn’t cover => Making an app for the terminal, email sending, GraphQL, testing (continuous integration), scraping…
-Service providers to make life easier => AWS S3, Postmark…
-What does it mean to be a backend developer?
+## How can you save a password?
+password is "password123"
+1. SHA256 encrypt "password123"
+2. Generate a random string to use as salt
+3. Salt the hash with the random string
+4. Save the representation of the password and the random string
+---
+## How do you login with a given username/password?
+Requirements:
+1. You should send "login succesfull" when an existing username/password is given
+2. You should send "login failed" when a wrong username/password is given
+Try to figure it out yourself. First one wins a price :D
+---
+Service providers to make life easier
+---
+- AWS S3 => File storage
+- Postmark => Email sending
+- Onesignal => Sending push notifications
+- ...
+---
+What we didn’t cover
+---
+Making an app for the terminal
+---
+GraphQL
+---
+Testing (continuous integration)
+---
+Web scraping and so much more
+---
+## What does is it take to be a web developer in 2018?
+Watch this [video](https://www.youtube.com/watch?v=gVXcqO9A1vo)
